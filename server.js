@@ -35,3 +35,4 @@ app.on('pronto', () => {  // o app escuta na porta 3000
   });
 });
 
+console.log('Teste');
