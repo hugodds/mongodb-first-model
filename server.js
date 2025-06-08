@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 // const connectionString = 'mongodb+srv://hugodmgs:Little-10@hgocluster.vdijz79.mongodb.net/BASEDEDADOS?retryWrites=true&w=majority&appName=hgocluster';
 mongoose.connect(process.env.CONNECTIONSTRING)
   .then(() => {
-    console.log('Conectei à base de dados.');
+    // console.log('Conectei à base de dados.');
     app.emit('pronto'); // Conexão com mongoose só vai existir quando o app.emit emitir esse aviso.
   })
   .catch(e => console.log(e));
