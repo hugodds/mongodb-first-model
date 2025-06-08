@@ -4,7 +4,6 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 
-// const connectionString = 'mongodb+srv://hugodmgs:Little-10@hgocluster.vdijz79.mongodb.net/BASEDEDADOS?retryWrites=true&w=majority&appName=hgocluster';
 mongoose.connect(process.env.CONNECTIONSTRING)
   .then(() => {
     // console.log('Conectei à base de dados.');
